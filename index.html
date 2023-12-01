@@ -20,15 +20,351 @@
     />
     <link rel="stylesheet" href="css/style.css" />
 
-
-    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon" />
     <title>Home - Real Estate Landing page</title>
   </head>
 
   <body>
+    <!-- <div class="card">
+  <div class="card-body">
+   <h2>S’identifier</h2>
+   <p>Tenez-vous au courant des évolutions  de  votre <br> monde professionnel</p>
+   <input type="text" class="form-control mb-3" placeholder="E-mail ou téléphone">
+   
+  
+   <div error-for="password" id="error-for-password" class="form__label--error   hidden" role="alert" aria-live="assertive"></div>
 
+   <span id="password-visibility-toggle" class="button__password-visibility" role="button" tabindex="0">afficher</span>
+   <input type="text" class="form-control mb-3 " placeholder="Mot de passe">
+  
+   <a href="/checkpoint/rp/request-password-reset" class="btn__tertiary--medium forgot-password" data-cie-control-urn="forgot-password-btn">Mot de passe oublié&nbsp;?</a>
 
+   <div class="login__form_action_container "><button class="btn-primary " data-litms-control-urn="login-submit" type="submit" aria-label="S’identifier">S’identifier</button></div>
 
+   <div class="position-relative">
+    <hr class="mt-4"/>
+    <p>OR</p>
+   </div>
+
+  </div>
+</div> -->
+    <div id="" class="card-layout">
+      <div id="organic-div" class="">
+        <div class="header__content">
+          <h1 class="header__content__heading">S’identifier</h1>
+          <p class="header__content__subheading">
+            Tenez-vous au courant des évolutions de votre monde professionnel
+          </p>
+        </div>
+        <form
+          method="post"
+          class="login__form"
+          action="/checkpoint/lg/login-submit"
+          novalidate=""
+        >
+          <input
+            type="hidden"
+            name="csrfToken"
+            value="ajax:1643799675261708919"
+          /><code
+            id="login_form_validation_error_username"
+            style="display: none"
+            ><!--"Saisissez un nom d’utilisateur valide"--></code
+          ><code
+            id="consumer_login__text_plain__large_username"
+            style="display: none"
+            ><!--"Les adresses e-mail et les numéros de téléphone portable doivent comporter entre 3 et 128 caractères"--></code
+          ><code
+            id="consumer_login__text_plain__no_username"
+            style="display: none"
+            ><!--"Saisissez une adresse e-mail ou un numéro de téléphone"--></code
+          >
+          <div class="form__input--floating mt-24">
+            <input
+              id="username"
+              name="session_key"
+              type="text"
+              aria-describedby="error-for-username"
+              required=""
+              validation="email|tel"
+              class=""
+              autofocus=""
+              aria-label="E-mail ou téléphone"
+            /><label
+              class="form__label--floating"
+              for="username"
+              aria-hidden="true"
+              >E-mail ou téléphone</label
+            >
+            <div
+              error-for="username"
+              id="error-for-username"
+              class="form__label--error hidden"
+              role="alert"
+              aria-live="assertive"
+            ></div>
+          </div>
+          <code id="domainSuggestion" style="display: none"><!--false--></code
+          ><input type="hidden" name="ac" value="0" /><input
+            type="hidden"
+            name="pkSupported"
+            id="pkSupported"
+            value="true"
+          /><input
+            type="hidden"
+            name="sIdString"
+            value="3b772f89-84a7-4318-a08d-a58bb4e8305d"
+          /><input
+            type="hidden"
+            name="parentPageKey"
+            value="d_checkpoint_lg_consumerLogin"
+          /><input
+            type="hidden"
+            name="pageInstance"
+            value="urn:li:page:checkpoint_lg_login_default;UU5Kk/QJTCqhQwAL8SYqRw=="
+          /><input type="hidden" name="trk" value="" /><input
+            type="hidden"
+            name="authUUID"
+            value=""
+          /><input type="hidden" name="session_redirect" value="" /><input
+            type="hidden"
+            name="loginCsrfParam"
+            value="0775ffa7-7626-4eca-8a2c-d827df72cda3"
+          /><input
+            type="hidden"
+            name="fp_data"
+            value="default"
+            id="fp_data_login"
+          /><input type="hidden" name="apfc" value="{}" id="apfc-login" /><input
+            type="hidden"
+            name="_d"
+            value="d"
+          /><input
+            type="hidden"
+            name="showGoogleOneTapLogin"
+            value="true"
+          /><code id="i18nShow" style="display: none"><!--"afficher"--></code
+          ><code id="i18nHide" style="display: none"><!--"masquer"--></code
+          ><input
+            type="hidden"
+            name="controlId"
+            value="d_checkpoint_lg_consumerLogin-login_submit_button"
+          /><code
+            id="consumer_login__text_plain__empty_password"
+            style="display: none"
+            ><!--"Saisissez un mot de passe."--></code
+          ><code
+            id="consumer_login__text_plain__small_password"
+            style="display: none"
+            ><!--"Le mot de passe doit comprendre au moins 6 caractères."--></code
+          ><code
+            id="consumer_login__text_plain__large_password"
+            style="display: none"
+            ><!--"Le mot de passe doit contenir 400 caractères au maximum."--></code
+          ><code
+            id="consumer_login__text_plain__wrong_password"
+            style="display: none"
+            ><!--"Ce n’est pas le bon mot de passe. Veuillez recommencer "--></code
+          ><code
+            id="consumer_login__text_plain__large_password_200_chars"
+            style="display: none"
+            ><!--"Le mot de passe doit contenir 200 caractères au maximum."--></code
+          >
+          <div class="form__input--floating mt-24">
+            <input
+              id="password"
+              type="password"
+              aria-describedby="error-for-password"
+              name="session_password"
+              required=""
+              validation="password"
+              autocomplete="current-password"
+              class=""
+              aria-label="Mot de passe"
+            /><label
+              for="password"
+              class="form__label--floating"
+              aria-hidden="true"
+              >Mot de passe</label
+            ><span
+              id="password-visibility-toggle"
+              class="button__password-visibility"
+              role="button"
+              tabindex="0"
+              >afficher</span
+            >
+            <div
+              error-for="password"
+              id="error-for-password"
+              class="form__label--error hidden"
+              role="alert"
+              aria-live="assertive"
+            ></div>
+          </div>
+          <a
+            href="/checkpoint/rp/request-password-reset"
+            class="btn__tertiary--medium forgot-password"
+            data-cie-control-urn="forgot-password-btn"
+            >Mot de passe oublié&nbsp;?</a
+          >
+          <div class="login__form_action_container">
+            <button
+              class="btn__primary--large from__button--floating"
+              data-litms-control-urn="login-submit"
+              type="submit"
+              aria-label="S’identifier"
+            >
+              S’identifier
+            </button>
+          </div>
+        </form>
+        <div class="alternate-signin-container">
+          <div id="or-separator" class="or-separator mt-12 snapple-seperator">
+            <span class="or-text">ou</span>
+          </div>
+          <code id="termsAndConditionsSkipTreatment" style="display: none"
+            ><!--"enabled"--></code
+          >
+          <p class="google-auth-button__tc">
+            En cliquant sur Continuer, vous acceptez les
+            <a href="/legal/user-agreement">Conditions d’utilisation</a>, la
+            <a href="/legal/privacy-policy">Politique de confidentialité</a> et
+            la
+            <a href="/legal/cookie-policy">Politique relative aux cookies</a> de
+            LinkedIn.
+          </p>
+          <div class="alternate-signin__btn--google mt-12">
+            <div class="S9gUrf-YoZ4jf" style="position: relative">
+              <div></div>
+              <iframe
+                src="https://accounts.google.com/gsi/button?logo_alignment=center&amp;shape=pill&amp;size=large&amp;text=continue_with&amp;theme=undefined&amp;type=undefined&amp;width=302&amp;client_id=990339570472-k6nqn1tpmitg8pui82bfaun3jrpmiuhs.apps.googleusercontent.com&amp;iframe_id=gsi_901596_325073&amp;as=wyxo5XQ6IS%2F4oWKSXmnBMg&amp;hl=en_US"
+                id="gsi_901596_325073"
+                title="Sign in with Google Button"
+                style="
+                  display: block;
+                  position: relative;
+                  top: 0px;
+                  left: 0px;
+                  height: 44px;
+                  width: 322px;
+                  border: 0px;
+                  margin: -2px -10px;
+                "
+              ></iframe>
+            </div>
+          </div>
+          <button
+            class="sign-in-with-apple-button"
+            type="button"
+            aria-label="S’identifier avec Apple"
+          >
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 2 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect width="24" height="24" fill="transparent"></rect>
+              <path
+                d="M17.569 12.6254C17.597 15.652 20.2179 16.6592 20.247 16.672C20.2248 16.743 19.8282 18.1073 18.8662 19.5166C18.0345 20.735 17.1714 21.9488 15.8117 21.974C14.4756 21.9986 14.046 21.1799 12.5185 21.1799C10.9915 21.1799 10.5142 21.9489 9.2495 21.9987C7.93704 22.0485 6.93758 20.6812 6.09906 19.4673C4.38557 16.9842 3.0761 12.4508 4.83438 9.39061C5.70786 7.87092 7.26882 6.90859 8.96311 6.88391C10.2519 6.85927 11.4683 7.753 12.2562 7.753C13.0436 7.753 14.5219 6.67821 16.0759 6.83605C16.7265 6.8632 18.5527 7.09947 19.7253 8.81993C19.6309 8.87864 17.5463 10.095 17.569 12.6254ZM15.058 5.1933C15.7548 4.34789 16.2238 3.171 16.0959 2C15.0915 2.04046 13.877 2.67085 13.1566 3.5158C12.5109 4.26404 11.9455 5.46164 12.0981 6.60946C13.2176 6.69628 14.3612 6.03925 15.058 5.1933Z"
+                fill="black"
+              ></path></svg
+            ><span class="sign-in-with-apple-button__text"
+              >S’identifier avec Apple</span
+            ></button
+          ><code id="appleSignInLibScriptPath" style="display: none"
+            ><!--"https://static.licdn.com/sc/h/1gpe377m8n1eq73qveizv5onv"--></code
+          ><code
+            id="i18nErrorAppleSignInGeneralErrorMessage"
+            style="display: none"
+            ><!--"Nous avons rencontré un problème. Veuillez essayer d’utiliser le nom d’utilisateur et le mot de passe."--></code
+          ><a
+            href="/ssr-login/request-otp-generation"
+            aria-label=""
+            class="btn-text one-time-link alternate-signin__btn mt-12"
+            id="sign-in-with-one-time-link"
+            type="button"
+            data-cie-control-urn="alternate_signin_otl_button"
+            data-tracking-will-navigate=""
+            ><svg
+              width="20"
+              height="21"
+              viewBox="0 0 20 21"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M11.32 14.35C10.27 14.35 9.21 13.95 8.41 13.16L7.87 12.62C7.48 12.23 7.48 11.6 7.87 11.21C8.26 10.82 8.89 10.82 9.28 11.21L9.81 11.75C10.64 12.57 11.98 12.57 12.81 11.75L17.13 7.47003C17.68 6.92003 17.99 6.19003 17.99 5.41003C17.99 4.63003 17.69 3.90003 17.13 3.35003C16.02 2.25003 14.21 2.25003 13.1 3.35003L11.48 4.96003C11.09 5.35003 10.46 5.35003 10.07 4.96003C9.68 4.57003 9.68 3.94003 10.07 3.55003L11.69 1.94003C13.57 0.0600293 16.65 0.0600293 18.54 1.94003C19.47 2.87003 19.99 4.10003 19.99 5.42003C19.99 6.74003 19.48 7.98003 18.54 8.90003L14.22 13.18C13.42 13.98 12.37 14.37 11.31 14.37L11.32 14.35ZM8.3 19.1L9.92 17.49C10.31 17.1 10.31 16.47 9.92 16.08C9.53 15.69 8.9 15.69 8.51 16.08L6.89 17.69C5.78 18.8 3.97 18.8 2.86 17.69C2.31 17.14 2 16.41 2 15.63C2 14.85 2.3 14.12 2.86 13.57L7.18 9.29003C8.01 8.47003 9.35 8.47003 10.18 9.29003L10.71 9.82003C11.1 10.21 11.73 10.21 12.12 9.82003C12.51 9.43003 12.51 8.80003 12.12 8.41003L11.58 7.87003C9.98 6.28003 7.37 6.28003 5.76 7.87003L1.45 12.13C0.52 13.06 0 14.29 0 15.61C0 16.93 0.51 18.17 1.45 19.09C2.39 20.03 3.63 20.49 4.87 20.49C6.11 20.49 7.35 20.02 8.3 19.08V19.1Z"
+                fill="black"
+                fill-opacity="0.75"
+              ></path></svg
+            ><span class="btn-text"
+              >S’identifier avec un lien à usage unique</span
+            ></a
+          ><a
+            class="alternate-signin__btn mt-12"
+            id="sign-in-with-passkey-btn"
+            role="button"
+            aria-label="Identifiez-vous avec une clé d’accès"
+            >Identifiez-vous avec une clé d’accès</a
+          ><code id="googleGSILibPath" style="display: none"
+            ><!--"https://static.licdn.com/sc/h/4k6diadsezedadhkq4uxfxss1"--></code
+          ><code id="useGoogleGSILibraryTreatment" style="display: none"
+            ><!--"middle"--></code
+          >
+        </div>
+      </div>
+      <div id="otp-div" class="hidden">
+        <div class="otp-success-container">
+          <h2 class="otp__header__content">
+            Nous avons envoyé un lien à usage unique à votre adresse e-mail
+            principale
+          </h2>
+          <p class="medium_text subheader__content">
+            Cliquez sur le lien pour vous identifier instantanément sur votre
+            compte LinkedIn.
+          </p>
+          <div class="mailbox__logo" aria-hidden="true">
+            <svg
+              width="64"
+              height="64"
+              viewBox="0 0 64 64"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M1 11H63V54H1V11Z" fill="#95ABC1"></path>
+              <path
+                d="M1 54L23.1 33.2C24.3 32.1 25.8 31.5 27.5 31.5H36.6C38.2 31.5 39.8 32.1 41 33.2L63 54H1Z"
+                fill="#B4C6D8"
+              ></path>
+              <path
+                d="M63 11L36.5 36.8C34 39.2 29.9 39.2 27.4 36.8L1 11H63Z"
+                fill="#D1DDE9"
+              ></path>
+            </svg>
+          </div>
+          <p class="medium_text footer__content">
+            Si vous ne recevez pas l’e-mail, vérifiez dans les courriers
+            indésirables de votre messagerie.
+          </p>
+          <button
+            class="resend-button mt-12"
+            id="btn-resend-otp"
+            type="button"
+            aria-label="Renvoyer l’e-mail"
+          >
+            Renvoyer l’e-mail</button
+          ><button
+            id="otp-cancel-button"
+            class="otp-back-button"
+            aria-label="Retour"
+          >
+            Retour
+          </button>
+        </div>
+      </div>
+    </div>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js"
       integrity="sha512-1/RvZTcCDEUjY/CypiMz+iqqtaoQfAITmNSJY17Myp4Ms5mdxPS5UV7iOfdZoxcGhzFbOm6sntTKJppjvuhg4g=="
